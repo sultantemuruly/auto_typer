@@ -17,3 +17,5 @@ env/
 # Logs
 *.log
 
+# text_to_type
+text_to_type.md
