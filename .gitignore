@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# macOS files
+.DS_Store
+
+# Virtual environment
+venv/
+env/
+
+# Editor files
+*.swp
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+*.log
+
