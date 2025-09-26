@@ -11,7 +11,12 @@ def auto_typer(file_path, min_delay=0.1, max_delay=0.75):
     time.sleep(5)
 
     for char in text:
-        pyautogui.write(char)
+        if char == "\n":  # Handle newlines manually
+            pyautogui.keyDown("shift")
+            pyautogui.press("enter")
+            pyautogui.keyUp("shift")
+        else:
+            pyautogui.write(char)
         time.sleep(random.uniform(min_delay, max_delay))
 
 
